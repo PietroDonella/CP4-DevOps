@@ -1,8 +1,8 @@
 #!/bin/bash
 RM="rm561722"
-RG="rg-CP4-cp"
+RG="rg-cp4-cp"
 LOCATION="brazilsouth"
-STORAGE_ACCOUNT="st${RM}CP4"
+STORAGE_ACCOUNT="st${RM}cp4"
 SHARE_NAME="mysql-volume"
 
 # Criar Storage Account

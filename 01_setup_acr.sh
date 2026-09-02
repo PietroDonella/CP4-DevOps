@@ -3,8 +3,8 @@
 az login
 
 RM="rm561722"
-RG="rg-CP4-cp"
-ACR_NAME="acr${RM}CP4"
+RG="rg-cp4-cp"
+ACR_NAME="acr${RM}cp4"
 LOCATION="brazilsouth"
 
 # 2. Criar Grupo de Recursos
