@@ -16,11 +16,9 @@ az acr create --resource-group $RG --name $ACR_NAME --sku Standard --location $L
 # 4. Login no ACR criado
 az acr login --name $ACR_NAME
 
-# 5. Build local das imagens (Salve esses comandos no README do Github!)
 docker build -f Dockerfile.mysql -t ${RM}-mysql:v1 .
 docker build -f Dockerfile.api -t ${RM}-api:v1 .
 
-# 6. Tag e Push das imagens com o RM como prefixo, conforme exigido no CP
 LOGIN_SERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv)
 
 docker tag ${RM}-mysql:v1 $LOGIN_SERVER/${RM}-mysql:v1
